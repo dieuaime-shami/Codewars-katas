@@ -7,11 +7,14 @@
 // 4 --> [1, 4]
 
 function off(n) {
-    const result =[];
-    for (let i = 1; i <= n; i++) {
-        if (Number.isInteger(Math.sqrt(i))) {
-            result.push(i);
-        }
+  
+  let result=[]
+  for(let i=1; i <=n; i++){
+    if(Number.isInteger(Math.sqrt(i))){
+      result.push(i)
     }
-    return result;
+  }
+  return result;
 }
+let output= off(9)
+console.log(output);
